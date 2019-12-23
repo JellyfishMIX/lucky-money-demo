@@ -9,7 +9,6 @@ public class HelloController {
     @Autowired
     private LimitConfig limitConfig;
 
-    // @GetMapping("/hi")
     @GetMapping("/say")
     public String say(@RequestParam(value = "id", required = false, defaultValue = "0") Integer id) {
         // return "Description: " + limitConfig.getDescription();
